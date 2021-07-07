@@ -1,0 +1,210 @@
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: /media/ssd-02/tavish/PhD/raw_data/koala_microbiome/illumina/whole_genome/koala_jarrah_PP_15_kb_2ndE_S12_R2_001.fastq
+Trimming mode: paired-end
+Trim Galore version: 0.6.6
+Cutadapt version: 2.6
+Number of cores used for trimming: 1
+Quality Phred score cutoff: 20
+Quality encoding type selected: ASCII+33
+Using Nextera adapter for trimming (count: 54030). Second best hit was smallRNA (count: 32)
+Adapter sequence: 'CTGTCTCTTATA' (Nextera Transposase sequence; auto-detected)
+Maximum trimming error rate: 0.1 (default)
+Minimum required adapter overlap (stringency): 1 bp
+Minimum required sequence length for both reads before a sequence pair gets removed: 20 bp
+All Read 1 sequences will be trimmed by 10 bp from their 5' end to avoid poor qualities or biases
+All Read 2 sequences will be trimmed by 10 bp from their 5' end to avoid poor qualities or biases (e.g. M-bias for BS-Seq applications)
+Running FastQC on the data once trimming has completed
+
+
+This is cutadapt 2.6 with Python 3.7.10
+Command line parameters: -j 1 -e 0.1 -q 20 -O 1 -a CTGTCTCTTATA /media/ssd-02/tavish/PhD/raw_data/koala_microbiome/illumina/whole_genome/koala_jarrah_PP_15_kb_2ndE_S12_R2_001.fastq
+Processing reads on 1 core in single-end mode ...
+Finished in 283.78 s (11 us/read; 5.45 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:              25,782,819
+Reads with adapters:                 9,159,618 (35.5%)
+Reads written (passing filters):    25,782,819 (100.0%)
+
+Total basepairs processed: 3,893,205,669 bp
+Quality-trimmed:               4,635,004 bp (0.1%)
+Total written (filtered):  3,799,853,707 bp (97.6%)
+
+=== Adapter 1 ===
+
+Sequence: CTGTCTCTTATA; Type: regular 3'; Length: 12; Trimmed: 9159618 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-12 bp: 1
+
+Bases preceding removed adapters:
+  A: 20.9%
+  C: 26.2%
+  G: 25.4%
+  T: 27.5%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+1	5559304	6445704.8	0	5559304
+2	1387218	1611426.2	0	1387218
+3	406058	402856.5	0	406058
+4	118079	100714.1	0	118079
+5	51076	25178.5	0	51076
+6	29201	6294.6	0	29201
+7	24007	1573.7	0	24007
+8	22050	393.4	0	22050
+9	20288	98.4	0	19752 536
+10	22115	24.6	1	20736 1379
+11	21986	6.1	1	21159 827
+12	24528	1.5	1	23796 732
+13	23958	1.5	1	23508 450
+14	26388	1.5	1	25730 658
+15	26009	1.5	1	25376 633
+16	27051	1.5	1	26316 735
+17	22167	1.5	1	21705 462
+18	21055	1.5	1	20583 472
+19	20124	1.5	1	19667 457
+20	18985	1.5	1	18542 443
+21	20372	1.5	1	19903 469
+22	21858	1.5	1	21301 557
+23	23261	1.5	1	22804 457
+24	24087	1.5	1	23604 483
+25	25297	1.5	1	24763 534
+26	23727	1.5	1	23260 467
+27	22628	1.5	1	22168 460
+28	21262	1.5	1	20769 493
+29	19194	1.5	1	18813 381
+30	17604	1.5	1	17231 373
+31	18403	1.5	1	17979 424
+32	19140	1.5	1	18748 392
+33	21225	1.5	1	20814 411
+34	24069	1.5	1	23566 503
+35	21110	1.5	1	20603 507
+36	23387	1.5	1	22891 496
+37	22074	1.5	1	21626 448
+38	21897	1.5	1	21451 446
+39	15417	1.5	1	15093 324
+40	16541	1.5	1	16175 366
+41	16283	1.5	1	15941 342
+42	17323	1.5	1	16960 363
+43	17791	1.5	1	17435 356
+44	19760	1.5	1	19408 352
+45	21074	1.5	1	20657 417
+46	22902	1.5	1	22451 451
+47	19397	1.5	1	19052 345
+48	17563	1.5	1	17216 347
+49	16995	1.5	1	16654 341
+50	14830	1.5	1	14567 263
+51	13854	1.5	1	13595 259
+52	14489	1.5	1	14149 340
+53	15678	1.5	1	15368 310
+54	18111	1.5	1	17684 427
+55	16554	1.5	1	16227 327
+56	18944	1.5	1	18563 381
+57	20307	1.5	1	19919 388
+58	14902	1.5	1	14655 247
+59	15068	1.5	1	14783 285
+60	13726	1.5	1	13446 280
+61	13139	1.5	1	12866 273
+62	10912	1.5	1	10629 283
+63	16436	1.5	1	16088 348
+64	13702	1.5	1	13413 289
+65	15669	1.5	1	15358 311
+66	11888	1.5	1	11637 251
+67	16343	1.5	1	16001 342
+68	15322	1.5	1	15024 298
+69	13540	1.5	1	13272 268
+70	12171	1.5	1	11962 209
+71	11299	1.5	1	11025 274
+72	11063	1.5	1	10790 273
+73	17142	1.5	1	16839 303
+74	14922	1.5	1	14654 268
+75	11892	1.5	1	11638 254
+76	9360	1.5	1	9155 205
+77	10883	1.5	1	10684 199
+78	11650	1.5	1	11392 258
+79	10862	1.5	1	10624 238
+80	9926	1.5	1	9694 232
+81	8452	1.5	1	8265 187
+82	7381	1.5	1	7165 216
+83	7469	1.5	1	7294 175
+84	8203	1.5	1	7972 231
+85	9137	1.5	1	8940 197
+86	9702	1.5	1	9518 184
+87	9989	1.5	1	9810 179
+88	9975	1.5	1	9793 182
+89	9690	1.5	1	9442 248
+90	8842	1.5	1	8636 206
+91	7587	1.5	1	7381 206
+92	6228	1.5	1	6077 151
+93	5664	1.5	1	5480 184
+94	5858	1.5	1	5689 169
+95	6663	1.5	1	6461 202
+96	7492	1.5	1	7317 175
+97	7850	1.5	1	7665 185
+98	8062	1.5	1	7870 192
+99	7961	1.5	1	7752 209
+100	7449	1.5	1	7262 187
+101	6182	1.5	1	5962 220
+102	4871	1.5	1	4685 186
+103	4147	1.5	1	3977 170
+104	4177	1.5	1	4032 145
+105	5141	1.5	1	4967 174
+106	6118	1.5	1	5946 172
+107	6326	1.5	1	6169 157
+108	6014	1.5	1	5868 146
+109	5533	1.5	1	5376 157
+110	5454	1.5	1	5261 193
+111	4801	1.5	1	4631 170
+112	3805	1.5	1	3661 144
+113	3219	1.5	1	3047 172
+114	3136	1.5	1	2996 140
+115	3933	1.5	1	3761 172
+116	4172	1.5	1	4010 162
+117	3623	1.5	1	3490 133
+118	3212	1.5	1	3094 118
+119	2853	1.5	1	2726 127
+120	2543	1.5	1	2408 135
+121	2451	1.5	1	2230 221
+122	2072	1.5	1	1909 163
+123	1792	1.5	1	1652 140
+124	1405	1.5	1	1276 129
+125	716	1.5	1	595 121
+126	337	1.5	1	238 99
+127	265	1.5	1	163 102
+128	226	1.5	1	99 127
+129	238	1.5	1	69 169
+130	197	1.5	1	71 126
+131	191	1.5	1	52 139
+132	216	1.5	1	60 156
+133	123	1.5	1	29 94
+134	150	1.5	1	37 113
+135	165	1.5	1	50 115
+136	124	1.5	1	27 97
+137	110	1.5	1	22 88
+138	140	1.5	1	24 116
+139	131	1.5	1	22 109
+140	149	1.5	1	22 127
+141	141	1.5	1	42 99
+142	202	1.5	1	67 135
+143	452	1.5	1	127 325
+144	102	1.5	1	15 87
+145	112	1.5	1	15 97
+146	56	1.5	1	4 52
+147	102	1.5	1	13 89
+148	179	1.5	1	15 164
+149	103	1.5	1	14 89
+150	103	1.5	1	19 84
+151	82	1.5	1	6 76
+
+RUN STATISTICS FOR INPUT FILE: /media/ssd-02/tavish/PhD/raw_data/koala_microbiome/illumina/whole_genome/koala_jarrah_PP_15_kb_2ndE_S12_R2_001.fastq
+=============================================
+25782819 sequences processed in total
+
+Total number of sequences analysed for the sequence pair length validation: 25782819
+
+Number of sequence pairs removed because at least one read was shorter than the length cutoff (20 bp): 21934 (0.09%)

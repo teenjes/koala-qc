@@ -1,4 +1,4 @@
-GUPPY BASECALLER TO BASECALL 3KOALA NANOPORE
+GUPPY BASECALLER TO BASECALL 3-KOALA NANOPORE
 guppy_basecaller -i ../../../raw_data/koala_microbiome/nanopore/whole_genome/koala_microbiome_SQK-LSK109_EXP-NBD104_FLO-MIN106_20201217_fast5/koala/no_sample/ -s whole_genome/ --flowcell FLO-MIN106 --kit SQK-LSK109
 --trim_barcodes --recursive --barcode_kits EXP-NBD104 --device auto -v
 
@@ -8,5 +8,16 @@ trim_galore --paired --fastqc ../../../../../raw_data/koala_microbiome/illumina/
 TRIM_GALORE FOR FASTQC OF ILLUMINA WHOLE GENOME
 trim_galore --paired --fastqc ../../../../../raw_data/koala_microbiome/illumina/whole_genome/*.fastq
 
+GUPPY BASECALLER TO BASECALL LEAF RUST - HIGH ACCURACY
+guppy_basecaller -i /media/ssd-02/tavish/PhD/raw_data/leaf_rust/nanopore/whole_genome/ -s /media/ssd-02/tavish/PhD/basecalled_data/leaf_rust/nanopore/whole_genome/hac/ -c dna_r9.4.1_450bps_hac.cfg --trim_barcodes --recursive --device auto -v
+
+GUPPY BASECALLER TO BASECALL LEAF RUST - SUPER HIGH ACCURACY
+guppy_basecaller -i /media/ssd-02/tavish/PhD/raw_data/leaf_rust/nanopore/whole_genome/ -s /media/ssd-02/tavish/PhD/basecalled_data/leaf_rust/nanopore/whole_genome/sup/ -c dna_r9.4.1_450bps_sup.cfg --trim_barcodes --recursive --device auto -v
+
+GUPPY BASECALLER TO BASECALL 3-KOALA NANOPORE - SUPER HIGH ACCURACY
+guppy_basecaller -i /media/ssd-02/tavish/PhD/raw_data/koala_microbiome/nanopore/whole_genome/koala_microbiome_SQK-LSK109_EXP-NBD104_FLO-MIN106_20201217_fast5/koala/no_sample/ -s /media/ssd-02/tavish/PhD/basecalled_data/koala_microbiome/nanopore/whole_genome/sup/ -c dna_r9.4.1_450bps_sup.cfg --barcode_kits EXP-NBD104 --trim_barcodes --recursive --device auto -v
+
+TRIM_GALORE FOR FASTQC OF ILLUMINA WHOLE GENOME WITH INITIAL 10 BP TRIMMED
+trim_galore --fastqc --paired --clip_R1 10 --clip_R2 10 /media/ssd-02/tavish/PhD/raw_data/koala_microbiome/illumina/whole_genome/*.fastq
 
 

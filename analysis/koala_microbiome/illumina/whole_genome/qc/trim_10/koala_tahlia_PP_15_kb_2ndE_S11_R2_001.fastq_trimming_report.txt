@@ -1,0 +1,210 @@
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: /media/ssd-02/tavish/PhD/raw_data/koala_microbiome/illumina/whole_genome/koala_tahlia_PP_15_kb_2ndE_S11_R2_001.fastq
+Trimming mode: paired-end
+Trim Galore version: 0.6.6
+Cutadapt version: 2.6
+Number of cores used for trimming: 1
+Quality Phred score cutoff: 20
+Quality encoding type selected: ASCII+33
+Using Nextera adapter for trimming (count: 54030). Second best hit was smallRNA (count: 32)
+Adapter sequence: 'CTGTCTCTTATA' (Nextera Transposase sequence; auto-detected)
+Maximum trimming error rate: 0.1 (default)
+Minimum required adapter overlap (stringency): 1 bp
+Minimum required sequence length for both reads before a sequence pair gets removed: 20 bp
+All Read 1 sequences will be trimmed by 10 bp from their 5' end to avoid poor qualities or biases
+All Read 2 sequences will be trimmed by 10 bp from their 5' end to avoid poor qualities or biases (e.g. M-bias for BS-Seq applications)
+Running FastQC on the data once trimming has completed
+
+
+This is cutadapt 2.6 with Python 3.7.10
+Command line parameters: -j 1 -e 0.1 -q 20 -O 1 -a CTGTCTCTTATA /media/ssd-02/tavish/PhD/raw_data/koala_microbiome/illumina/whole_genome/koala_tahlia_PP_15_kb_2ndE_S11_R2_001.fastq
+Processing reads on 1 core in single-end mode ...
+Finished in 313.46 s (11 us/read; 5.32 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:              27,809,285
+Reads with adapters:                 9,928,852 (35.7%)
+Reads written (passing filters):    27,809,285 (100.0%)
+
+Total basepairs processed: 4,199,202,035 bp
+Quality-trimmed:               4,705,120 bp (0.1%)
+Total written (filtered):  4,117,357,998 bp (98.1%)
+
+=== Adapter 1 ===
+
+Sequence: CTGTCTCTTATA; Type: regular 3'; Length: 12; Trimmed: 9928852 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-12 bp: 1
+
+Bases preceding removed adapters:
+  A: 20.0%
+  C: 27.8%
+  G: 26.0%
+  T: 26.3%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+1	6357275	6952321.2	0	6357275
+2	1496954	1738080.3	0	1496954
+3	494098	434520.1	0	494098
+4	128845	108630.0	0	128845
+5	51019	27157.5	0	51019
+6	27840	6789.4	0	27840
+7	22502	1697.3	0	22502
+8	19998	424.3	0	19998
+9	18666	106.1	0	18076 590
+10	18979	26.5	1	17825 1154
+11	19701	6.6	1	19110 591
+12	21024	1.7	1	20628 396
+13	21862	1.7	1	21488 374
+14	23123	1.7	1	22697 426
+15	22851	1.7	1	22419 432
+16	23978	1.7	1	23352 626
+17	20060	1.7	1	19632 428
+18	18705	1.7	1	18389 316
+19	17707	1.7	1	17415 292
+20	16488	1.7	1	16168 320
+21	17317	1.7	1	16999 318
+22	18605	1.7	1	18238 367
+23	20028	1.7	1	19757 271
+24	21467	1.7	1	21071 396
+25	22523	1.7	1	22180 343
+26	21063	1.7	1	20719 344
+27	19999	1.7	1	19707 292
+28	18396	1.7	1	18084 312
+29	16586	1.7	1	16330 256
+30	15147	1.7	1	14891 256
+31	15746	1.7	1	15475 271
+32	17014	1.7	1	16739 275
+33	17460	1.7	1	17180 280
+34	19539	1.7	1	19228 311
+35	21380	1.7	1	20959 421
+36	20866	1.7	1	20558 308
+37	19422	1.7	1	19131 291
+38	15978	1.7	1	15703 275
+39	15410	1.7	1	15189 221
+40	14073	1.7	1	13837 236
+41	13864	1.7	1	13620 244
+42	14740	1.7	1	14491 249
+43	14996	1.7	1	14781 215
+44	16913	1.7	1	16658 255
+45	18255	1.7	1	17993 262
+46	19447	1.7	1	19148 299
+47	17447	1.7	1	17211 236
+48	15146	1.7	1	14923 223
+49	14521	1.7	1	14287 234
+50	12479	1.7	1	12250 229
+51	11427	1.7	1	11167 260
+52	12074	1.7	1	11860 214
+53	13112	1.7	1	12850 262
+54	15566	1.7	1	15309 257
+55	14090	1.7	1	13880 210
+56	16289	1.7	1	16010 279
+57	17497	1.7	1	17237 260
+58	12866	1.7	1	12684 182
+59	12754	1.7	1	12524 230
+60	11616	1.7	1	11370 246
+61	11000	1.7	1	10688 312
+62	9146	1.7	1	8842 304
+63	13433	1.7	1	13161 272
+64	11659	1.7	1	11428 231
+65	13256	1.7	1	13053 203
+66	10188	1.7	1	9981 207
+67	14248	1.7	1	13949 299
+68	13123	1.7	1	12883 240
+69	11385	1.7	1	11202 183
+70	10339	1.7	1	10142 197
+71	9164	1.7	1	8985 179
+72	8984	1.7	1	8792 192
+73	13408	1.7	1	13215 193
+74	12104	1.7	1	11920 184
+75	9700	1.7	1	9527 173
+76	8086	1.7	1	7929 157
+77	9556	1.7	1	9359 197
+78	9675	1.7	1	9470 205
+79	8997	1.7	1	8815 182
+80	8204	1.7	1	8056 148
+81	7010	1.7	1	6696 314
+82	5906	1.7	1	5711 195
+83	5738	1.7	1	5560 178
+84	6435	1.7	1	6246 189
+85	7387	1.7	1	7223 164
+86	7989	1.7	1	7833 156
+87	8218	1.7	1	8043 175
+88	8135	1.7	1	7987 148
+89	7815	1.7	1	7580 235
+90	7119	1.7	1	6956 163
+91	6053	1.7	1	5868 185
+92	4947	1.7	1	4796 151
+93	4481	1.7	1	4321 160
+94	4579	1.7	1	4401 178
+95	5292	1.7	1	5121 171
+96	5983	1.7	1	5847 136
+97	6308	1.7	1	6138 170
+98	6262	1.7	1	6119 143
+99	6316	1.7	1	6142 174
+100	5957	1.7	1	5829 128
+101	4765	1.7	1	4578 187
+102	3777	1.7	1	3635 142
+103	3173	1.7	1	3040 133
+104	3197	1.7	1	3054 143
+105	4150	1.7	1	3846 304
+106	4856	1.7	1	4710 146
+107	5041	1.7	1	4899 142
+108	4755	1.7	1	4591 164
+109	4394	1.7	1	4258 136
+110	4066	1.7	1	3885 181
+111	3592	1.7	1	3427 165
+112	2816	1.7	1	2664 152
+113	2520	1.7	1	2335 185
+114	2366	1.7	1	2205 161
+115	2894	1.7	1	2727 167
+116	3316	1.7	1	3185 131
+117	2999	1.7	1	2870 129
+118	2588	1.7	1	2455 133
+119	2298	1.7	1	2092 206
+120	1992	1.7	1	1840 152
+121	1858	1.7	1	1656 202
+122	1633	1.7	1	1464 169
+123	1392	1.7	1	1252 140
+124	1003	1.7	1	838 165
+125	503	1.7	1	390 113
+126	309	1.7	1	193 116
+127	280	1.7	1	152 128
+128	204	1.7	1	97 107
+129	200	1.7	1	73 127
+130	195	1.7	1	52 143
+131	172	1.7	1	31 141
+132	223	1.7	1	41 182
+133	134	1.7	1	21 113
+134	172	1.7	1	26 146
+135	149	1.7	1	21 128
+136	143	1.7	1	28 115
+137	196	1.7	1	23 173
+138	137	1.7	1	24 113
+139	186	1.7	1	16 170
+140	444	1.7	1	12 432
+141	153	1.7	1	16 137
+142	159	1.7	1	35 124
+143	335	1.7	1	61 274
+144	94	1.7	1	7 87
+145	102	1.7	1	8 94
+146	63	1.7	1	4 59
+147	66	1.7	1	6 60
+148	171	1.7	1	18 153
+149	57	1.7	1	6 51
+150	82	1.7	1	10 72
+151	104	1.7	1	4 100
+
+RUN STATISTICS FOR INPUT FILE: /media/ssd-02/tavish/PhD/raw_data/koala_microbiome/illumina/whole_genome/koala_tahlia_PP_15_kb_2ndE_S11_R2_001.fastq
+=============================================
+27809285 sequences processed in total
+
+Total number of sequences analysed for the sequence pair length validation: 27809285
+
+Number of sequence pairs removed because at least one read was shorter than the length cutoff (20 bp): 22676 (0.08%)
